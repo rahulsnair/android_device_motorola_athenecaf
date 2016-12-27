@@ -1,4 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
+#
+# Copyright 2014 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,20 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-$(call inherit-product, device/motorola/athene/full_athene.mk)
-
-# Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_BOOTANIMATION_HALF_RES := true
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := athene
-PRODUCT_NAME := cm_athene
-PRODUCT_BRAND := Motorola
-PRODUCT_MANUFACTURER := Motorola
-PRODUCT_RELEASE_NAME := athene
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_athene.mk
