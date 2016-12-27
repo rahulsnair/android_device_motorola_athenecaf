@@ -200,6 +200,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8952
 
+# QCOM display HAL
+$(call project-set-path,qcom-display,device/motorola/athene/display-caf)
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

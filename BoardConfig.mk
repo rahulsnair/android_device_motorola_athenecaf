@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -129,9 +128,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # CPU
 ENABLE_CPUSETS := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Properties
 TARGET_SYSTEM_PROP += device/motorola/athene/system.prop
